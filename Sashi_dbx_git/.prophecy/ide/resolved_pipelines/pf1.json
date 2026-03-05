@@ -1,0 +1,84 @@
+{
+  "id" : "pf1",
+  "metainfo" : {
+    "label" : "pf1",
+    "autoLayout" : false,
+    "version" : 1,
+    "configuration" : {
+      "schema" : {
+        "type" : "record",
+        "fields" : [ ]
+      }
+    },
+    "isTranspiledPipeline" : false,
+    "publishDiagnosticMetrics" : false,
+    "processesVsModelFiles" : {
+      "M-84aKs84pNsV8mbHS5D7$$zwk0UCJ4MVehUfWBkFuyP" : "models/pf1/pf1__targetout.sql",
+      "SFqwuoABkFMhy-KHBi63w$$Duys8dJ7QePJyt92h7U60" : "models/pf1/pf1__targetout.sql",
+      "Filter_2_f69nZUNNQqBPtrkLV6BIp$$sdcVL4CrUFK4E_TUPmKmf" : "models/pf1/pf1__Filter_2.sql",
+      "wRQORYx-Juk2Zn2tNe72r$$rrH2VJOjA6XkIPImhJMnD" : "models/pf1/pf1__targetout.sql",
+      "kgWEcCc6ee9D5-R4uIJww$$WUdMEIMHQYQMud-BTheFi" : "models/pf1/pf1__Filter_2.sql",
+      "fAQG2AkSZXUsLL-v3odRb$$KrITO4xqhgxcxkA8FMEK1" : "models/pf1/pf1__Filter_2.sql"
+    }
+  },
+  "processes" : {
+    "M-84aKs84pNsV8mbHS5D7$$zwk0UCJ4MVehUfWBkFuyP" : {
+      "id" : "M-84aKs84pNsV8mbHS5D7$$zwk0UCJ4MVehUfWBkFuyP",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "pf1__targetout",
+        "phase" : 0
+      },
+      "properties" : {
+        "modelName" : "pf1__targetout"
+      },
+      "visualMetaInfo" : {
+        "visualProcessIds" : [ "M-84aKs84pNsV8mbHS5D7$$zwk0UCJ4MVehUfWBkFuyP", "wRQORYx-Juk2Zn2tNe72r$$rrH2VJOjA6XkIPImhJMnD", "SFqwuoABkFMhy-KHBi63w$$Duys8dJ7QePJyt92h7U60" ],
+        "type" : "table",
+        "isTemporaryTable" : false,
+        "lastNodeProcessIds" : [ "M-84aKs84pNsV8mbHS5D7$$zwk0UCJ4MVehUfWBkFuyP" ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "pf1__targetout_in_0",
+          "slug" : "in_0"
+        } ],
+        "outputs" : [ {
+          "id" : "pf1__targetout_out_0",
+          "slug" : "out_0"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "fAQG2AkSZXUsLL-v3odRb$$KrITO4xqhgxcxkA8FMEK1" : {
+      "id" : "fAQG2AkSZXUsLL-v3odRb$$KrITO4xqhgxcxkA8FMEK1",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "pf1__Filter_2",
+        "phase" : 0
+      },
+      "properties" : {
+        "modelName" : "pf1__Filter_2"
+      },
+      "visualMetaInfo" : {
+        "visualProcessIds" : [ "Filter_2_f69nZUNNQqBPtrkLV6BIp$$sdcVL4CrUFK4E_TUPmKmf", "fAQG2AkSZXUsLL-v3odRb$$KrITO4xqhgxcxkA8FMEK1", "kgWEcCc6ee9D5-R4uIJww$$WUdMEIMHQYQMud-BTheFi" ],
+        "type" : "ephemeral",
+        "isTemporaryTable" : true,
+        "lastNodeProcessIds" : [ "Filter_2_f69nZUNNQqBPtrkLV6BIp$$sdcVL4CrUFK4E_TUPmKmf" ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "pf1__Filter_2_in_0",
+          "slug" : "in_0"
+        } ],
+        "outputs" : [ {
+          "id" : "pf1__Filter_2_out_0",
+          "slug" : "out_0"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
+  "connections" : [ ],
+  "component" : "Pipeline"
+}

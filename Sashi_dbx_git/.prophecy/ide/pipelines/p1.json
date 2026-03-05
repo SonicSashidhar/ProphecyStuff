@@ -1,0 +1,196 @@
+{
+  "id" : "p1",
+  "metainfo" : {
+    "label" : "p1",
+    "autoLayout" : false,
+    "version" : 1,
+    "configuration" : {
+      "schema" : {
+        "type" : "record",
+        "fields" : [ ]
+      }
+    },
+    "isTranspiledPipeline" : false,
+    "publishDiagnosticMetrics" : false,
+    "processesVsModelFiles" : {
+      "Xq-gSIRjKI9b39WXn0WAp" : "models/p1/p1__Filter_2.sql",
+      "rh4B_gBA3R-3eJE2RZ2x3" : "models/p1/p1__targetout.sql",
+      "t1-MEOOlj0FYG3cY7Dyt3$$sBmJNVwu3VVC6A18pLBN9" : "models/p1/p1__Filter_2.sql",
+      "Filter_2_lfBlf6iAKqK3K8QJFgJWk$$VbS5WTeq1yrvkJEGg3n4F" : "models/p1/p1__Filter_2.sql",
+      "UaECS2189I1iAADsWNWMK$$FfcAtIXu2H3f1ZVtQFMev" : "models/p1/p1__targetout.sql",
+      "NSWEFeAlnpt3W_GBREi4m" : "models/p1/p1__targetout.sql"
+    }
+  },
+  "processes" : {
+    "Xq-gSIRjKI9b39WXn0WAp" : {
+      "id" : "Xq-gSIRjKI9b39WXn0WAp",
+      "component" : "Dataset",
+      "metadata" : {
+        "label" : "airport",
+        "x" : -280,
+        "y" : 60,
+        "phase" : 0
+      },
+      "properties" : {
+        "writeOptions" : {
+          "writeMode" : "overwrite"
+        },
+        "table" : {
+          "name" : "airport",
+          "sourceType" : "Table",
+          "sourceName" : "tanmay_default",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "YXufho9bmLF43qv54dO3p",
+          "slug" : "in"
+        } ],
+        "outputs" : [ {
+          "id" : "WNeiDRLkzEq6g9rj05qhv",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "rh4B_gBA3R-3eJE2RZ2x3" : {
+      "id" : "rh4B_gBA3R-3eJE2RZ2x3",
+      "component" : "Dataset",
+      "metadata" : {
+        "label" : "addresses",
+        "x" : -200,
+        "y" : -200,
+        "phase" : 0
+      },
+      "properties" : {
+        "writeOptions" : {
+          "writeMode" : "overwrite"
+        },
+        "table" : {
+          "name" : "addresses",
+          "sourceType" : "Table",
+          "sourceName" : "tanmay_default",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "qZnkRYwfWXtTAMtYzP29W",
+          "slug" : "in"
+        } ],
+        "outputs" : [ {
+          "id" : "GRf0q4tKcjDRwLAzY5LHA",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "t1-MEOOlj0FYG3cY7Dyt3$$sBmJNVwu3VVC6A18pLBN9" : {
+      "id" : "t1-MEOOlj0FYG3cY7Dyt3$$sBmJNVwu3VVC6A18pLBN9",
+      "component" : "Filter",
+      "metadata" : {
+        "label" : "Filter_2",
+        "x" : -60,
+        "y" : 60,
+        "phase" : 0
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "condition" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "iwfaYzs-4BraGf81zgFI7$$Rr3WC8MLxqXFynY0_tGX8",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "lfBlf6iAKqK3K8QJFgJWk$$VbS5WTeq1yrvkJEGg3n4F",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "UaECS2189I1iAADsWNWMK$$FfcAtIXu2H3f1ZVtQFMev" : {
+      "id" : "UaECS2189I1iAADsWNWMK$$FfcAtIXu2H3f1ZVtQFMev",
+      "component" : "Filter",
+      "metadata" : {
+        "label" : "Filter_1",
+        "x" : 0,
+        "y" : -200,
+        "phase" : 0
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "condition" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "L4OPx7ZBwIeiXXMOKF7Rh$$dP9Dd6gD3lkV1RogE1U1X",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "y_sp4pvtvbJtjrK0gCdyP$$nAAGgDtJXChJdbfsyKHYC",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "NSWEFeAlnpt3W_GBREi4m" : {
+      "id" : "NSWEFeAlnpt3W_GBREi4m",
+      "component" : "Dataset",
+      "metadata" : {
+        "label" : "targetout",
+        "x" : 200,
+        "y" : -220,
+        "phase" : 0
+      },
+      "properties" : {
+        "writeOptions" : {
+          "writeMode" : "overwrite"
+        },
+        "table" : {
+          "name" : "targetout",
+          "sourceType" : "Table",
+          "sourceName" : "tanmay_sashi",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "PtdssHZzloya0L0sYJI-0",
+          "slug" : "in"
+        } ],
+        "outputs" : [ {
+          "id" : "-bv5scG9Nj0ZcRKQjkZCa",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "CBbsng6D9zIPCyAEIIUcc$$8-lhxMluArc8fWiVt8U5E",
+    "source" : "rh4B_gBA3R-3eJE2RZ2x3",
+    "sourcePort" : "GRf0q4tKcjDRwLAzY5LHA",
+    "target" : "UaECS2189I1iAADsWNWMK$$FfcAtIXu2H3f1ZVtQFMev",
+    "targetPort" : "L4OPx7ZBwIeiXXMOKF7Rh$$dP9Dd6gD3lkV1RogE1U1X"
+  }, {
+    "id" : "GYgLq4OxSi6dpJwG4S5ZN$$m75XTMfEoQN3tWzxjUGX0",
+    "source" : "Xq-gSIRjKI9b39WXn0WAp",
+    "sourcePort" : "WNeiDRLkzEq6g9rj05qhv",
+    "target" : "t1-MEOOlj0FYG3cY7Dyt3$$sBmJNVwu3VVC6A18pLBN9",
+    "targetPort" : "iwfaYzs-4BraGf81zgFI7$$Rr3WC8MLxqXFynY0_tGX8"
+  }, {
+    "id" : "kiptjb-2c7GGQITt7Pz_n$$uKHgs8kqumbh_J6ZHd6Id",
+    "source" : "UaECS2189I1iAADsWNWMK$$FfcAtIXu2H3f1ZVtQFMev",
+    "sourcePort" : "y_sp4pvtvbJtjrK0gCdyP$$nAAGgDtJXChJdbfsyKHYC",
+    "target" : "NSWEFeAlnpt3W_GBREi4m",
+    "targetPort" : "PtdssHZzloya0L0sYJI-0"
+  } ],
+  "component" : "Pipeline"
+}

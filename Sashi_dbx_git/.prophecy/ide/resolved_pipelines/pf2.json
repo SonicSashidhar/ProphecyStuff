@@ -1,0 +1,84 @@
+{
+  "id" : "pf2",
+  "metainfo" : {
+    "label" : "pf2",
+    "autoLayout" : false,
+    "version" : 1,
+    "configuration" : {
+      "schema" : {
+        "type" : "record",
+        "fields" : [ ]
+      }
+    },
+    "isTranspiledPipeline" : false,
+    "publishDiagnosticMetrics" : false,
+    "processesVsModelFiles" : {
+      "z8-5Nz78cF4LGGGtYPqUf$$R6LJmeHblluyFbGZqm9NY" : "models/pf2/pf2__targetout.sql",
+      "LSGDN5CprL1SRrqg1naKe$$JcE3Oyntjbl-6j8mu6KX0" : "models/pf2/pf2__Filter_2.sql",
+      "Filter_2_D5lT6HbJoT1zq9EVokkly$$QSn2IMP6HjPnXYAL2n6s9" : "models/pf2/pf2__Filter_2.sql",
+      "QQjY_vU2l4NsZ_IZYpjMF$$tCOgnkjkywtMOvA7P9pIL" : "models/pf2/pf2__targetout.sql",
+      "4FFw6eLirrLjMcDGktl8j$$sxWf2N2Xx35SnTrfRHhH8" : "models/pf2/pf2__Filter_2.sql",
+      "VRU4NMvVDxOTzEpnCXBHm$$UVhlkF3g3Jrd9VrhbkBhz" : "models/pf2/pf2__targetout.sql"
+    }
+  },
+  "processes" : {
+    "LSGDN5CprL1SRrqg1naKe$$JcE3Oyntjbl-6j8mu6KX0" : {
+      "id" : "LSGDN5CprL1SRrqg1naKe$$JcE3Oyntjbl-6j8mu6KX0",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "pf2__Filter_2",
+        "phase" : 0
+      },
+      "properties" : {
+        "modelName" : "pf2__Filter_2"
+      },
+      "visualMetaInfo" : {
+        "visualProcessIds" : [ "Filter_2_D5lT6HbJoT1zq9EVokkly$$QSn2IMP6HjPnXYAL2n6s9", "LSGDN5CprL1SRrqg1naKe$$JcE3Oyntjbl-6j8mu6KX0", "4FFw6eLirrLjMcDGktl8j$$sxWf2N2Xx35SnTrfRHhH8" ],
+        "type" : "ephemeral",
+        "isTemporaryTable" : true,
+        "lastNodeProcessIds" : [ "Filter_2_D5lT6HbJoT1zq9EVokkly$$QSn2IMP6HjPnXYAL2n6s9" ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "pf2__Filter_2_in_0",
+          "slug" : "in_0"
+        } ],
+        "outputs" : [ {
+          "id" : "pf2__Filter_2_out_0",
+          "slug" : "out_0"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "QQjY_vU2l4NsZ_IZYpjMF$$tCOgnkjkywtMOvA7P9pIL" : {
+      "id" : "QQjY_vU2l4NsZ_IZYpjMF$$tCOgnkjkywtMOvA7P9pIL",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "pf2__targetout",
+        "phase" : 0
+      },
+      "properties" : {
+        "modelName" : "pf2__targetout"
+      },
+      "visualMetaInfo" : {
+        "visualProcessIds" : [ "QQjY_vU2l4NsZ_IZYpjMF$$tCOgnkjkywtMOvA7P9pIL", "VRU4NMvVDxOTzEpnCXBHm$$UVhlkF3g3Jrd9VrhbkBhz", "z8-5Nz78cF4LGGGtYPqUf$$R6LJmeHblluyFbGZqm9NY" ],
+        "type" : "table",
+        "isTemporaryTable" : false,
+        "lastNodeProcessIds" : [ "QQjY_vU2l4NsZ_IZYpjMF$$tCOgnkjkywtMOvA7P9pIL" ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "pf2__targetout_in_0",
+          "slug" : "in_0"
+        } ],
+        "outputs" : [ {
+          "id" : "pf2__targetout_out_0",
+          "slug" : "out_0"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
+  "connections" : [ ],
+  "component" : "Pipeline"
+}

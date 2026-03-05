@@ -1,0 +1,38 @@
+---
+version: 2
+sources:
+- name: "tanmay_default"
+  database: "tanmay"
+  schema: "default"
+  tables:
+  - name: "addresses"
+    config:
+      tags:
+      - "pipeline:p1"
+      - "pipeline:pf1"
+      - "pipeline:pf1f2"
+      - "pipeline:pf2"
+    columns: []
+    type: "table"
+  - name: "airport"
+    config:
+      tags:
+      - "pipeline:p1"
+      - "pipeline:pf1"
+      - "pipeline:pf1f2"
+      - "pipeline:pf2"
+    columns: []
+    type: "table"
+- name: "tanmay_sashi"
+  database: "tanmay"
+  schema: "sashi"
+  tables:
+  - name: "targetout"
+    config:
+      tags:
+      - "pipeline:p1"
+      - "pipeline:pf1"
+      - "pipeline:pf1f2"
+      - "pipeline:pf2"
+    columns: []
+    type: "table"

@@ -1,0 +1,9 @@
+---
+version: 2
+models:
+- name: "pf1f2__Filter_2"
+  tags:
+  - "prophecy_temp"
+- name: "pf1f2__targetout"
+  tags:
+  - "prophecy_temp"

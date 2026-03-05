@@ -1,0 +1,9 @@
+{
+  "id" : "p3_analysis",
+  "metainfo" : {
+    "description" : "",
+    "pipelineId" : "p3",
+    "parameterSet" : ""
+  },
+  "instances" : { }
+}

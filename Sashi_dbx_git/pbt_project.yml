@@ -1,0 +1,237 @@
+name: Sashi_dbx_git
+description: ''
+version: 0.0.1
+author: sony@prophecy.io
+language: sql
+buildSystem: ''
+buildSystemDetails: null
+pipelines: {}
+datasets: {}
+templates: {}
+jobs: {}
+gemContainer:
+  languageVersion: ''
+  gemLibsVersion: ''
+  gems: {}
+  dependencies: null
+functions:
+  author: null
+  createdAt: '2026-03-05 06:55:59'
+  udfs: {}
+  udafs: {}
+  expressions: {}
+  airflowFunctions: {}
+  businessRules: {}
+subgraphs: {}
+sqlModels: {}
+sqlSnapshots: {}
+sqlTests: {}
+sqlMacros:
+  .prophecy/metadata/sqlmacros/generate_schema_name:
+    name: generate_schema_name
+    macroType: expression
+    description: null
+    author: sony@prophecy.io
+    files:
+    - macros/generate_schema_name.sql
+    - .prophecy/ide/macros/generate_schema_name.json
+    createdAt: '2026-03-05 06:56:09'
+  .prophecy/metadata/sqlmacros/prophecy_tmp_source:
+    name: prophecy_tmp_source
+    macroType: expression
+    description: null
+    author: sony@prophecy.io
+    files:
+    - macros/prophecy_tmp_source.sql
+    - .prophecy/ide/macros/prophecy_tmp_source.json
+    createdAt: '2026-03-05 07:08:36'
+sqlSeeds: {}
+sqlSources:
+  .prophecy/metadata/sqlsources/tanmay_default:
+    name: tanmay_default
+    description: null
+    author: sony@prophecy.io
+    files:
+    - prophecy-sources/sources.yml
+    createdAt: '2026-03-05 07:09:36'
+    tables:
+    - name: addresses
+      schema:
+        entityType: ''
+        providerType: databricks
+        fields: []
+      description: null
+      author: sony@prophecy.io
+      createdAt: '2026-03-05 07:09:36'
+      tableType: table
+    - name: airport
+      schema:
+        entityType: ''
+        providerType: databricks
+        fields: []
+      description: null
+      author: sony@prophecy.io
+      createdAt: '2026-03-05 07:13:30'
+      tableType: table
+  .prophecy/metadata/sqlsources/tanmay_sashi:
+    name: tanmay_sashi
+    description: null
+    author: sony@prophecy.io
+    files:
+    - prophecy-sources/sources.yml
+    createdAt: '2026-03-05 07:14:15'
+    tables:
+    - name: targetout
+      schema:
+        entityType: ''
+        providerType: databricks
+        fields: []
+      description: null
+      author: sony@prophecy.io
+      createdAt: '2026-03-05 07:14:15'
+      tableType: table
+sqlUnreferencedSources: {}
+sqlPipeline:
+  name: sqlPipeline
+  description: null
+  author: sony@prophecy.io
+  createdAt: '2026-03-05 06:55:59'
+dependencies: []
+projectDependencies:
+  '64560':
+    projectUID: 64560
+    projectName: prophecy_basics
+    repositoryPath: gitUri=https://github.com/prophecy-io/prophecy-basics&subPath=
+    version: 1.0.8.dev4
+    isDefault: true
+    author: null
+    createdAt: '2026-03-05 06:55:58'
+flags:
+  shouldAddDefaultDependenciesIfAbsent: true
+pipelineConfigurations: {}
+projectConfigurations: {}
+sqlOrchestratorPipelines:
+  .prophecy/metadata/sqlorchestratorpipeline/p1:
+    name: p1
+    schema: null
+    description: null
+    author: sony@prophecy.io
+    files:
+    - .prophecy/ide/pipelines/p1.json
+    - pipelines/p1.py
+    - models/p1/schema.yml
+    - models/p1/p1__Filter_2.sql
+    - models/p1/p1__targetout.sql
+    createdAt: '2026-03-05 07:08:36'
+  .prophecy/metadata/sqlorchestratorpipeline/p2:
+    name: p2
+    schema: null
+    description: null
+    author: sony@prophecy.io
+    files:
+    - pipelines/p2.py
+    - .prophecy/ide/pipelines/p2.json
+    createdAt: '2026-03-05 07:15:30'
+  .prophecy/metadata/sqlorchestratorpipeline/p3:
+    name: p3
+    schema: null
+    description: null
+    author: sony@prophecy.io
+    files:
+    - pipelines/p3.py
+    - .prophecy/ide/pipelines/p3.json
+    createdAt: '2026-03-05 07:15:36'
+  .prophecy/metadata/sqlorchestratorpipeline/pf1:
+    name: pf1
+    schema: null
+    description: null
+    author: sony@prophecy.io
+    files:
+    - pipelines/f1/pf1.py
+    - .prophecy/ide/pipelines/pf1.json
+    - models/pf1/pf1__targetout.sql
+    - models/pf1/pf1__Filter_2.sql
+    - models/pf1/schema.yml
+    - models/pf1f2/pf1f2__Filter_2.sql
+    - models/pf1f2/schema.yml
+    - models/pf1f2/pf1f2__targetout.sql
+    createdAt: '2026-03-05 07:16:27'
+  .prophecy/metadata/sqlorchestratorpipeline/pf2:
+    name: pf2
+    schema: null
+    description: null
+    author: sony@prophecy.io
+    files:
+    - pipelines/f1/f2/pf2.py
+    - .prophecy/ide/pipelines/pf2.json
+    - models/pf2/pf2__Filter_2.sql
+    - models/pf2/pf2__targetout.sql
+    - models/pf2/schema.yml
+    createdAt: '2026-03-05 07:16:56'
+  .prophecy/metadata/sqlorchestratorpipeline/pf1f2:
+    name: pf1f2
+    schema: null
+    description: null
+    author: sony@prophecy.io
+    files:
+    - pipelines/f1/f2/pf1f2.py
+    - .prophecy/ide/pipelines/pf1f2.json
+    - models/pf1f2/pf1f2__targetout.sql
+    - models/pf1f2/pf1f2__Filter_2.sql
+    - models/pf1f2/schema.yml
+    createdAt: '2026-03-05 07:17:37'
+sqlBusinessApps:
+  .prophecy/metadata/sqlbusinessapp/p1_analysis:
+    name: p1_analysis
+    schema: null
+    description: null
+    author: sony@prophecy.io
+    files:
+    - apps/p1_analysis.json
+    createdAt: '2026-03-05 07:08:37'
+    sqlOrchestrationPipelineName: p1
+  .prophecy/metadata/sqlbusinessapp/p2_analysis:
+    name: p2_analysis
+    schema: null
+    description: null
+    author: sony@prophecy.io
+    files:
+    - apps/p2_analysis.json
+    createdAt: '2026-03-05 07:15:31'
+    sqlOrchestrationPipelineName: p2
+  .prophecy/metadata/sqlbusinessapp/p3_analysis:
+    name: p3_analysis
+    schema: null
+    description: null
+    author: sony@prophecy.io
+    files:
+    - apps/p3_analysis.json
+    createdAt: '2026-03-05 07:15:37'
+    sqlOrchestrationPipelineName: p3
+  .prophecy/metadata/sqlbusinessapp/pf1_analysis:
+    name: pf1_analysis
+    schema: null
+    description: null
+    author: sony@prophecy.io
+    files:
+    - apps/pf1_analysis.json
+    createdAt: '2026-03-05 07:16:28'
+    sqlOrchestrationPipelineName: pf1
+  .prophecy/metadata/sqlbusinessapp/pf2_analysis:
+    name: pf2_analysis
+    schema: null
+    description: null
+    author: sony@prophecy.io
+    files:
+    - apps/pf2_analysis.json
+    createdAt: '2026-03-05 07:16:58'
+    sqlOrchestrationPipelineName: pf2
+  .prophecy/metadata/sqlbusinessapp/pf1f2_analysis:
+    name: pf1f2_analysis
+    schema: null
+    description: null
+    author: sony@prophecy.io
+    files:
+    - apps/pf1f2_analysis.json
+    createdAt: '2026-03-05 07:17:39'
+    sqlOrchestrationPipelineName: pf1f2

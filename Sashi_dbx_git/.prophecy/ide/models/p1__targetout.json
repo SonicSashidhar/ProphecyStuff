@@ -1,0 +1,128 @@
+{
+  "id" : "p1__targetout",
+  "metainfo" : {
+    "label" : "p1__targetout",
+    "autoLayout" : true,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "graphConfig" : {
+      "entityConfig" : {
+        "alias" : "\"targetout\"",
+        "materialized" : "table",
+        "database" : "\"tanmay\"",
+        "schema" : "\"sashi\"",
+        "type" : "ModelConfig"
+      }
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "NSWEFeAlnpt3W_GBREi4m" : {
+      "id" : "NSWEFeAlnpt3W_GBREi4m",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "targetout",
+        "phase" : 0
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "\nSELECT *\n\nFROM Filter_1\n\n",
+        "isModel" : true,
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "PtdssHZzloya0L0sYJI-0",
+          "slug" : "in"
+        } ],
+        "outputs" : [ {
+          "id" : "-bv5scG9Nj0ZcRKQjkZCa",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "UaECS2189I1iAADsWNWMK$$FfcAtIXu2H3f1ZVtQFMev" : {
+      "id" : "UaECS2189I1iAADsWNWMK$$FfcAtIXu2H3f1ZVtQFMev",
+      "component" : "Filter",
+      "metadata" : {
+        "label" : "Filter_1",
+        "x" : 0,
+        "y" : -200,
+        "phase" : 0
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "condition" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "L4OPx7ZBwIeiXXMOKF7Rh$$dP9Dd6gD3lkV1RogE1U1X",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "y_sp4pvtvbJtjrK0gCdyP$$nAAGgDtJXChJdbfsyKHYC",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "rh4B_gBA3R-3eJE2RZ2x3" : {
+      "id" : "rh4B_gBA3R-3eJE2RZ2x3",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "addresses",
+        "x" : -200,
+        "y" : -200,
+        "phase" : 0
+      },
+      "properties" : {
+        "writeOptions" : {
+          "writeMode" : "overwrite"
+        },
+        "table" : {
+          "name" : "addresses",
+          "sourceType" : "Table",
+          "sourceName" : "tanmay_default",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "GRf0q4tKcjDRwLAzY5LHA",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "kiptjb-2c7GGQITt7Pz_n$$uKHgs8kqumbh_J6ZHd6Id",
+    "source" : "UaECS2189I1iAADsWNWMK$$FfcAtIXu2H3f1ZVtQFMev",
+    "sourcePort" : "y_sp4pvtvbJtjrK0gCdyP$$nAAGgDtJXChJdbfsyKHYC",
+    "target" : "NSWEFeAlnpt3W_GBREi4m",
+    "targetPort" : "PtdssHZzloya0L0sYJI-0",
+    "isWireless" : false
+  }, {
+    "id" : "CBbsng6D9zIPCyAEIIUcc$$8-lhxMluArc8fWiVt8U5E",
+    "source" : "rh4B_gBA3R-3eJE2RZ2x3",
+    "sourcePort" : "GRf0q4tKcjDRwLAzY5LHA",
+    "target" : "UaECS2189I1iAADsWNWMK$$FfcAtIXu2H3f1ZVtQFMev",
+    "targetPort" : "L4OPx7ZBwIeiXXMOKF7Rh$$dP9Dd6gD3lkV1RogE1U1X",
+    "isWireless" : false
+  } ],
+  "component" : "Model"
+}

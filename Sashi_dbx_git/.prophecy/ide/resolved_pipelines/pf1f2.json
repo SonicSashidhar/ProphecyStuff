@@ -1,0 +1,84 @@
+{
+  "id" : "pf1f2",
+  "metainfo" : {
+    "label" : "pf1f2",
+    "autoLayout" : false,
+    "version" : 1,
+    "configuration" : {
+      "schema" : {
+        "type" : "record",
+        "fields" : [ ]
+      }
+    },
+    "isTranspiledPipeline" : false,
+    "publishDiagnosticMetrics" : false,
+    "processesVsModelFiles" : {
+      "VjLa112yLfltNPcPx3iMu$$4kjGATly0sI9mw5QqM8He" : "models/pf1f2/pf1f2__Filter_2.sql",
+      "0Eji82l8q5ywITjDEvtSv$$j1L9-yRkU_dapmdRSDKss" : "models/pf1f2/pf1f2__targetout.sql",
+      "Filter_2_rcbG7HSf9aKS8zJSiw_Yk$$jyF8uWRJMtpWgFyX8iP2m" : "models/pf1f2/pf1f2__Filter_2.sql",
+      "Txkx_5GE47wryIXsc7nIc$$ZADhG1rQOj3BSWNS5jgBW" : "models/pf1f2/pf1f2__targetout.sql",
+      "Yzrefud2d5ZV4Eq3gq66f$$nr1Jm28Fx83Asu219CJBo" : "models/pf1f2/pf1f2__Filter_2.sql",
+      "WhVOWIT5HdoO3X2om2T4K$$X9KvKOhzxVq_NPosHBi1g" : "models/pf1f2/pf1f2__targetout.sql"
+    }
+  },
+  "processes" : {
+    "VjLa112yLfltNPcPx3iMu$$4kjGATly0sI9mw5QqM8He" : {
+      "id" : "VjLa112yLfltNPcPx3iMu$$4kjGATly0sI9mw5QqM8He",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "pf1f2__Filter_2",
+        "phase" : 0
+      },
+      "properties" : {
+        "modelName" : "pf1f2__Filter_2"
+      },
+      "visualMetaInfo" : {
+        "visualProcessIds" : [ "Filter_2_rcbG7HSf9aKS8zJSiw_Yk$$jyF8uWRJMtpWgFyX8iP2m", "VjLa112yLfltNPcPx3iMu$$4kjGATly0sI9mw5QqM8He", "Yzrefud2d5ZV4Eq3gq66f$$nr1Jm28Fx83Asu219CJBo" ],
+        "type" : "ephemeral",
+        "isTemporaryTable" : true,
+        "lastNodeProcessIds" : [ "Filter_2_rcbG7HSf9aKS8zJSiw_Yk$$jyF8uWRJMtpWgFyX8iP2m" ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "pf1f2__Filter_2_in_0",
+          "slug" : "in_0"
+        } ],
+        "outputs" : [ {
+          "id" : "pf1f2__Filter_2_out_0",
+          "slug" : "out_0"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "Txkx_5GE47wryIXsc7nIc$$ZADhG1rQOj3BSWNS5jgBW" : {
+      "id" : "Txkx_5GE47wryIXsc7nIc$$ZADhG1rQOj3BSWNS5jgBW",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "pf1f2__targetout",
+        "phase" : 0
+      },
+      "properties" : {
+        "modelName" : "pf1f2__targetout"
+      },
+      "visualMetaInfo" : {
+        "visualProcessIds" : [ "Txkx_5GE47wryIXsc7nIc$$ZADhG1rQOj3BSWNS5jgBW", "WhVOWIT5HdoO3X2om2T4K$$X9KvKOhzxVq_NPosHBi1g", "0Eji82l8q5ywITjDEvtSv$$j1L9-yRkU_dapmdRSDKss" ],
+        "type" : "table",
+        "isTemporaryTable" : false,
+        "lastNodeProcessIds" : [ "Txkx_5GE47wryIXsc7nIc$$ZADhG1rQOj3BSWNS5jgBW" ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "pf1f2__targetout_in_0",
+          "slug" : "in_0"
+        } ],
+        "outputs" : [ {
+          "id" : "pf1f2__targetout_out_0",
+          "slug" : "out_0"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
+  "connections" : [ ],
+  "component" : "Pipeline"
+}

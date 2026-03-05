@@ -1,0 +1,9 @@
+{
+  "id" : "pf1_analysis",
+  "metainfo" : {
+    "description" : "",
+    "pipelineId" : "pf1",
+    "parameterSet" : ""
+  },
+  "instances" : { }
+}
